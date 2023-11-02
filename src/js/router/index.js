@@ -25,6 +25,7 @@ function authGuard(callback = () => {}, view = "") {
 
 async function route() {
   const { view, postId, name } = getSearchParams()
+  console.log(view);
   switch (view) {
     case "post":
       return authGuard(() => {
