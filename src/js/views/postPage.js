@@ -20,6 +20,7 @@ export const postPage = async (postId) => {
     if (postId) {
       const post = await getPost(postId);
       const owner = post.author.name === me.name;
+      console.log(post);
 
       if (owner) {
         const page = postTabsTemplate();
