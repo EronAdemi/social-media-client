@@ -1,5 +1,4 @@
-// Assuming you have a file named `auth.js` with the logout function
-import { logout } from './logout.js'; // Adjust the path to where your logout function is actually located.
+import { logout } from './logout.js'; 
 import * as storage from '../../storage/index.js';
 
 // Mock the remove function from the storage module
